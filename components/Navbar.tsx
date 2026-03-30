@@ -124,7 +124,6 @@ export default function Navbar() {
             ))}
             <a
               href="/resumexkk.pdf"
-              download="Krishan_Kant_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 rounded-full text-center font-semibold bg-primary text-white"
