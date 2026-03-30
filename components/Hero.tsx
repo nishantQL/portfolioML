@@ -89,6 +89,7 @@ export default function Hero() {
             </a>
             <a 
               href="/resumexkk.pdf"
+              download="Krishan_Kant_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3.5 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 transition-all transform hover:-translate-y-1 w-full sm:w-auto backdrop-blur-sm"

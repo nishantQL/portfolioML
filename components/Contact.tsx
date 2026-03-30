@@ -36,9 +36,16 @@ export default function Contact() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=nishant73883@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:nishant73883@gmail.com"
+              onClick={(e) => {
+                e.preventDefault();
+                const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                if (isMobile) {
+                  window.location.href = "mailto:nishant73883@gmail.com";
+                } else {
+                  window.open("https://mail.google.com/mail/?view=cm&fs=1&to=nishant73883@gmail.com", "_blank");
+                }
+              }}
               className="group flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary text-white font-semibold text-lg shadow-[0_0_20px_rgba(107,63,160,0.5)] hover:shadow-[0_0_40px_rgba(155,111,208,0.7)] transition-all transform hover:-translate-y-1 w-full sm:w-auto overflow-hidden relative"
             >
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
